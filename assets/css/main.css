@@ -1,0 +1,56 @@
+html, body, div, span, a, button, ul, li {
+	border: 0;
+	color: white;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+html {
+	font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+	line-height: 1.5;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+body {
+	background: #191919;
+	height: 100vh;
+}
+
+header, footer {
+	position: relative;
+	padding: 0 50px;
+}
+
+header {
+	background: black;
+	border-bottom: 1px solid #222;
+	display: flex;
+	align-items: middle;
+	height: 65px;
+}
+
+#logo {
+	padding: 14px 5px 14px 0;
+	width: 25px;
+}
+
+header h1 {
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+footer {
+	display: none;
+	background: #111;
+	bottom: 0;
+	padding: 30px 0;
+	position: relative;
+	width: 100%;
+}
+
+footer .copy {
+	margin: 0 50px;
+}

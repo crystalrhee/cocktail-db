@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cocktail DB</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/search.css" />
+	<link rel="stylesheet" href="assets/css/results.css" />
+</head>
+<body class="home">
+	<header>
+		<a href="/" class="logo"><img src="assets/img/logo-white.png" alt="logo" id="logo" /></a>
+		<h1>COCKTAIL DB</h1>
+	</header>
+	<main>
+		<section id="search">
+			<input type="search" required="true" placeholder="Search Drinks" class="search-input">
+			<input type="submit" class="button search hidden" value="Search">
+			<ul class="options">
+				<li class="option active">name</li>
+				<li class="option">ingredients</li>
+				<li class="option">id</li>
+			</ul>
+		</section>
+		<section id="results">
+			<div class="results-grid"></div>
+		</section>
+	</main>
+	<footer>
+		<div class="copy">
+			<p>&copy;2018 Crystal Rhee</p>
+		</div>
+	</footer>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

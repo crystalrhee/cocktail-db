@@ -1,0 +1,81 @@
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+}
+
+#search {
+	position: relative;
+}
+
+.search-input {
+	background: none;
+	border: 0;
+	box-shadow: none !important;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Telefon Black", Sans-Serif;
+	font-size: 6rem;
+	outline: none;
+	padding: 0 10%;
+	position: relative;
+	width: 100%;
+}
+
+.search-input:hover {
+	outline: none;
+}
+
+.options {
+	display: block;
+	left: 0;
+	margin: 1% 15%;
+	position: relative;
+	text-align: left;
+}
+
+.options .option {
+	display: inline;
+	padding: 0 5px;
+	text-transform: capitalize;
+}
+
+.option:hover {
+	cursor: pointer;
+}
+
+
+.active {
+	color: #ffdd40;
+	text-transform: bold;
+}
+
+button {
+	-webkit-appearance: none;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: normal !important;
+	line-height: 1.2;
+	margin: 0 10px 0 0;
+	outline: 0;
+	padding: 10px 16px;
+	position: relative;
+	text-decoration: none !important;
+	text-overflow: ellipsis;
+	text-shadow: none;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.hidden {
+	position: absolute !important;
+	top: -9999px;
+	left: -9999px;
+}
