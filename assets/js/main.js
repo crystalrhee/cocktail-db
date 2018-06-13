@@ -14,7 +14,7 @@ var app = {
 			case "name":
 				searchtype = "search.php?s=";
 				break;
-			case "ingredients":
+			case "information":
 				searchtype = "search.php?i=";
 				break;
 			case "id":
@@ -47,7 +47,7 @@ var app = {
     	var type = $(".active").text();
     	var collection = {}
 		switch(type) {
-			case "ingredients":
+			case "information":
 				collection = data.ingredients;
 				break;
 			default:
@@ -55,7 +55,7 @@ var app = {
 		}
 		if (collection != null) {
             switch(type) {
-                case "ingredients":
+                case "information":
                     app.showingred(collection);
                     break;
                 default:
