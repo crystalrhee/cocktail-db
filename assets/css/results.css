@@ -28,7 +28,6 @@
 .card {
 	border: 5px solid #2f2f31;
 	border-radius: 2px;
-	overflow: hidden;
 	position: relative;
 }
 
@@ -132,7 +131,9 @@
 
 .modal .caption {
 	background-color: #141414;
+	height: 100px;
 	margin: 15px 0;
+	overflow: scroll;
 	position: relative;
 	width: 100%;
 }

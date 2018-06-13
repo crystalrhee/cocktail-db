@@ -40,7 +40,6 @@ var app = {
         })
         .catch(function() {
             console.log("Error fetching");
-            
         });
     },
     parsedata: (data) => {
