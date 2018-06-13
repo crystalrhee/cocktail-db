@@ -21,15 +21,15 @@
 
 .no-result {
 	margin: 0 auto;
+	position: fixed;
+	width: 370px;
 }
 
 .card {
 	border: 5px solid #2f2f31;
 	border-radius: 2px;
-	margin: 25px 3px;
 	overflow: hidden;
 	position: relative;
-	width: 100%;
 }
 
 .card img {
@@ -72,4 +72,87 @@
 
 .card:hover .name {
 	opacity: 1;
+}
+
+.show{
+	padding: 10px 0;
+}
+
+.mask{
+	background: rgba(47,47,49,0.8);
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	transition: 0.7s;
+	visibility: hidden;
+	width: 100%;
+	z-index: 50;
+	
+}
+
+.modal{
+	background-color: #141414;
+	border: 5px solid black;
+	color: #ffffff;
+	float: left;
+	left: 50%;
+	line-height: 1.4em;
+	max-height: 650px;
+	max-width: 500px;
+	opacity: 0;
+	overflow: hidden;
+	position: fixed;
+	text-align: left;
+	top: 15%;
+	transform: translate(-50%, -20%);
+	visibility: hidden;
+	width: 100%;
+	z-index: 100;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.modal img {
+	max-width: 100%;
+	vertical-align: top;
+	opacity: 0.85;
+}
+
+.modal h3 {
+	color: white;
+	margin: 0;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+.modal .caption {
+	background-color: #141414;
+	margin: 15px 0;
+	position: relative;
+	width: 100%;
+}
+
+.caption .isalcoholic {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.caption p {
+	margin: 0;
+}
+
+#modals .active{
+	visibility: visible;
+	opacity: 1;
+}
+
+#modals .active + .modal{
+	visibility: visible;
+	opacity: 1;
+	transform: translate(-50%, 0%);
 }
