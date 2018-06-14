@@ -110,7 +110,7 @@ var app = {
         $("<div/>", {
                 "class":"no-result",
                 "text": "No results found."
-            }).appendTo(".results-grid");
+            }).appendTo("#results");
     },
     createModal: (data) => {
         var isalcoholic = data.strAlcoholic;
